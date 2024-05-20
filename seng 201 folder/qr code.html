@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-ticket</title>
+    <link rel="stylesheet" href="/qrcode css.css">
+</head>
+<body>
+    <div class="head">
+        <h4>UMIS</h4>
+    </div>
+    <div class="landing">
+        <div class="bigbox">
+            <div class="textbox">
+                <h3>Welcome To Umis <span style="color: blue;">E</span>-Ticket</h3><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing e
+                    lit. Nobis sequi mollitia magni ab
+                     ullam sunt? Quas nesciunt omnis earum eum?
+                </p>
+            </div>
+            <div class="imgbox">
+                <img src="/phonehand-removebg-preview.png" class="hand" alt="scan"/>
+            </div>
+        </div>
+    </div>
+    <div class="headtext2">
+        <h2>Generate ID</h2>
+    </div>
+    <div class="cover">
+        <div class="container">
+            <p> CLICK HERE TO GENERATE YOUR UNIQUE QR CODE</p>
+            <input type="password" placeholder="INPUT YOUR INFORMATION" id="qrText">
+            <div id="imgbox">
+                <img src="" id="qrImage">
+
+            </div>
+            <button onclick="generateQR()"> Generate qr code</button>
+        </div> 
+    </div>
+    <script>
+        let imgbox = document.getElementById("imgbox");
+        let qrImage = document.getElementById("qrImage");
+        let qrText = document.getElementById("qrText");
+    
+        function generateQR(){
+            qrImage.src = "https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=" + qrText.value;
+            imgbox.classList.add("show-img");
+        }
+    </script>
+</body>
+</html>

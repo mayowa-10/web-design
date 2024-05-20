@@ -1,0 +1,40 @@
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url('loginback.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: grid;
+    
+}
+.origin{
+    font-size: 30px;
+    color:black;
+    margin-bottom: 50px;
+    text-align: center;
+    padding: 10px;
+}
+.name{
+    padding: 10px;
+    margin-left: 40%;
+    margin: solid black;
+    color: grey;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    width: 20%;
+    align-items: center;
+    height: 30vh;
+
+}
+.but{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.but a:hover{
+    color: green;
+}
