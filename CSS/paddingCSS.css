@@ -1,0 +1,12 @@
+.blue{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    padding-left: 10px;
+    position: absolute;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
