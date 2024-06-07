@@ -1,0 +1,13 @@
+/* body{
+    background-color: black ;
+    color: white ;
+} */
+.one{
+    color: black;
+    font-weight: 400;
+}
+.allitems{
+    padding: 5em;
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
